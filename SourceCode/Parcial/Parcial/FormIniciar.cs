@@ -40,9 +40,5 @@ namespace Parcial
                     break;
             }
         }
-        private void FormIniciar_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }
