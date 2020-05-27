@@ -88,17 +88,45 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="address.cs" />
+        <Compile Include="addressDAO.cs" />
+        <Compile Include="apporder.cs" />
+        <Compile Include="apporderDAO.cs" />
+        <Compile Include="appuser.cs" />
+        <Compile Include="appuserDAO.cs" />
+        <Compile Include="business.cs" />
+        <Compile Include="businessDAO.cs" />
         <Compile Include="ConexionBD.cs" />
-        <Compile Include="Form1.cs">
+        <Compile Include="FormAdministrador.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="FormAdministrador.Designer.cs">
+          <DependentUpon>FormAdministrador.cs</DependentUpon>
+        </Compile>
+        <Compile Include="FormIniciar.cs">
             <SubType>Form</SubType>
         </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
+        <Compile Include="FormIniciar.Designer.cs">
+            <DependentUpon>FormIniciar.cs</DependentUpon>
         </Compile>
+        <Compile Include="FormNormal.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="FormNormal.Designer.cs">
+          <DependentUpon>FormNormal.cs</DependentUpon>
+        </Compile>
+        <Compile Include="product.cs" />
+        <Compile Include="productDAO.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <EmbeddedResource Include="Form1.resx">
-          <DependentUpon>Form1.cs</DependentUpon>
+        <EmbeddedResource Include="FormAdministrador.resx">
+          <DependentUpon>FormAdministrador.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="FormIniciar.resx">
+          <DependentUpon>FormIniciar.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="FormNormal.resx">
+          <DependentUpon>FormNormal.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
