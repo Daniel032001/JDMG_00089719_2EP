@@ -37,7 +37,7 @@ namespace Parcial
                         string sql = String.Format("insert into address (iduser,Address) "
                                                    + "values({0},'{1}')", iduser,Address);
                         ConexionBD.realizarAccion(sql);
-                        MessageBox.Show("Direccion agregada correctamente");
+                        MessageBox.Show("Orden agregada correctamente");
                     }
                     catch (Exception e)
                     {
@@ -54,7 +54,7 @@ namespace Parcial
                             "delete from address where iduser='{0}';",
                             id);
                         ConexionBD.realizarAccion(sql);
-                        MessageBox.Show("Se eliminó la direccion y su informacion ");
+                        MessageBox.Show("Se eliminó la orden y su informacion ");
                     }
                     catch (Exception e)
                     {

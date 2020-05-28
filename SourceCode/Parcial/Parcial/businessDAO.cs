@@ -54,7 +54,7 @@ namespace Parcial
                     "delete from business where idbusiness='{0}';",
                     id);
                 ConexionBD.realizarAccion(sql);
-                MessageBox.Show("Se eliminó el usuario y su informacion ");
+                MessageBox.Show("Se eliminó el negocio y su informacion ");
             }
             catch (Exception e)
             {
