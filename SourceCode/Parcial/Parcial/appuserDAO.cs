@@ -65,12 +65,12 @@ namespace Parcial
             return lista;
         }
         //----------------------------------------------------------------------------------------------------
-        public static void crearusuario(string fullname,string username,string password ,int admin)
+        public static void crearusuario(string fullname,string username,string password ,int usertype)
         {
             try
             {
-                string sql = String.Format("insert into appuser(fullname,username,password,admin)"
-                                           + "values('{0}','{1}','{2}',{3})", fullname, username, password,admin);
+                string sql = String.Format("insert into appuser(fullname,username,password,usertype)"
+                                           + "values('{0}','{1}','{2}',{3})", fullname, username, password,usertype);
                 ConexionBD.realizarAccion(sql);
                 MessageBox.Show("Usuario creado correctamente");
             }
@@ -85,7 +85,7 @@ namespace Parcial
             try
             {
                 string sql = String.Format(
-                    "delete from apporder where iduser ='{0}'; " +
+                    
                     "delete from appuser where iduser='{0}';",
                     id);
                 ConexionBD.realizarAccion(sql);
@@ -96,5 +96,6 @@ namespace Parcial
                 MessageBox.Show("Ha ocurrido un error" + e);
             }
         }
+       
     }
 }
