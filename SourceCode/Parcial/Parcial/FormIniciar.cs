@@ -40,5 +40,12 @@ namespace Parcial
                     break;
             }
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MessageBox.Show("Saliendo...");
+            Application.Exit();
+
+        }
     }
 }

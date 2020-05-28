@@ -566,6 +566,7 @@ namespace Parcial
             this.Controls.Add(this.tabControl1);
             this.Name = "FormAdministrador";
             this.Text = "FormAdministrador";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdministrador_FormClosed);
             this.Load += new System.EventHandler(this.FormAdministrador_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

@@ -178,5 +178,10 @@ namespace Parcial
                 limmpiar();
             }
         }
+         private void FormAdministrador_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MessageBox.Show("Cerrando sesion...");
+            Application.Exit();
+        }
     }
 }
